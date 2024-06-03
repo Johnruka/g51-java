@@ -14,6 +14,6 @@ public class App {
 
         // java statement,
         System.out.println( "Hello World!" );
-        System.out.println("Hello Sweden");
+        System.out.println("Hello Java");
     }
 }
