@@ -10,6 +10,10 @@ public class operators {
         System.out.println(numer2);// 10
 numer2 = number1;
         System.out.println(number1);// 20;
-        System.out.println(numer2);// 20
+        System.out.println(numer2);// 20;
+        number1 = numer2;
+        System.out.println(number1);// 10;
+        System.out.println(numer2);// 10;
+
     }
 }
