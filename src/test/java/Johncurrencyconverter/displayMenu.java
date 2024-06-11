@@ -1,10 +1,19 @@
 package Johncurrencyconverter;
 
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.net.HttpURLConnection;
+import java.net.MalformedURLException;
 import java.net.URL;
+import java.nio.charset.MalformedInputException;
 import java.util.HashMap;
 import java.util.Scanner;
 
 public class displayMenu {
+
+    private static final String GET_URL = ;
+    private static final String URL = ;
 
     public static void main(String[] args) {
 
@@ -42,8 +51,25 @@ public class displayMenu {
 
      }
 
-     private static void sendHttpGetRequest(String fromCode, String toCode, double amount){
+     private static void sendHttpGetRequest(String fromCode, String toCode, double amount) throws IOException {
 
-        String GET URL = "https:api.exchangeratesapi.io/latest?base=" + toCode +"&symbols=" + fromCode;
+        String GET URL = "https:api.exchangeable.io/latest?base=" + toCode +"&symbols=" + fromCode;
+        URL url = new URL(GET_URL);
+         HttpURLConnection httpURLConnection = (HttpURLConnection) url.openConnection();
+         httpURLConnection.setRequestMethod("GET");
+         int responseCode = httpURLConnection.getResponseCode();
+
+         if (responseCode == HttpURLConnection.HTTP_OK) { //Success
+             BufferedReader in = new BufferedReader(new InputStreamReader(httpURLConnection.getInputStream()));
+             String inputLine;
+             StringBuilder response = new StringBuilder();
+
+             while ((inputLine = in.readLine()) != null){
+                 response.append(inputLine);
+             }in.close();
+         }
+
+
     }
 }
+
