@@ -3,7 +3,7 @@ package Johncurrencyconverter;
 public class ExchangeOperations {
 
     public static double convertsekToUsd(double sekAmount) {
-        return sekAmount * ExchangeRates.setToUsdRates;
+        return sekAmount * ExchangeRates.sekToUsdRates;
     }
 
     public static double convertUsdTosek(double usdAmount){
