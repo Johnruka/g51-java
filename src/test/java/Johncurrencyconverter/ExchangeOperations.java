@@ -2,9 +2,8 @@ package Johncurrencyconverter;
 
 public class ExchangeOperations {
 
-    public double convertSekToUsd(double sekAmount){
-        double usdAmount = sekAmount * 0.097851038;
-
+    public static double convertsekToUsd(double sekAmount) {
+        return sekAmount * 0.097851038;
 
     }
 }
