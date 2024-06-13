@@ -3,8 +3,9 @@ package Johncurrencyconverter;
 public class Apps {
     public static void main(String[] args) {
 
-        double sekAmount = 100;
-        double sekToUsd = ExchangeOperations.convertsekToUsd(sekAmount);
-        System.out.println(sekToUsd);
+        // step 1 : display menu
+        // step 2 : get the user choice from the scanner
+        // step 3 : perform operations
+
     }
 }
