@@ -23,6 +23,11 @@ public class Apps {
             case 4:
                 // perform Euro to sek
                 break;
+            case 0:
+                // display goodbye message
+                break;
+            default:
+                //display invalid operation number message
         }
 
 
