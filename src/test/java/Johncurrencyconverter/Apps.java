@@ -6,10 +6,12 @@ public class Apps {
     public static <displayMenu> void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-        public static void displayMenu(displayMenu){
+        Object displayMenu;
+
+
         int choice = scanner.nextInt();
 
-        switch (choice){
+        switch (choice) {
 
             case 1:
                 // perform sek to Usd
@@ -31,16 +33,14 @@ public class Apps {
         }
 
 
+        // performOperations
 
-            // performOperations
+        // step 1 : display menu
+        // step 2 : get the user choice from the scanner
+        // step 3 : perform operations
 
-            // step 1 : display menu
-            // step 2 : get the user choice from the scanner
-            // step 3 : perform operations
 
-        }
 
-         {
             System.out.println("Currency Converter App");
             System.out.println("1. Convert SEK to USD");
             System.out.println("2. Convert USD to SEK");
