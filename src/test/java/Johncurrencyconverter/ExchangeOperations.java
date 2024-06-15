@@ -2,21 +2,21 @@ package Johncurrencyconverter;
 
 public class ExchangeOperations {
 
-    public static double convertsekToUsd(double sekAmount) {
+    public static double convertSekToUsd(double sekAmount) {
         return sekAmount * ExchangeRates.sekToUsdRate;
     }
 
-    public static double convertUsdTosek(double usdAmount){
-        return usdAmount * ExchangeRates.UsdTosekRate;
+    public static double convertUsdToSek(double usdAmount){
+        return usdAmount * ExchangeRates.UsdToSekRate;
 
     }
 
-    public static double convertsekToEuro(double sekAmount){
+    public static double convertSekToEuro(double sekAmount){
         return  sekAmount * ExchangeRates.sekToEuroRate;
     }
 
-    public static double convertEuroTosek(double EuroAmount){
-        return EuroAmount * ExchangeRates.EuroTosekRate;
+    public static double convertEuroToSek(double EuroAmount){
+        return EuroAmount * ExchangeRates.EuroToSekRate;
     }
 
 
