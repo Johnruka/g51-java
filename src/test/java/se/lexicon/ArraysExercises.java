@@ -1,5 +1,7 @@
 package se.lexicon;
 
+
+
 public class ArraysExercises {
 
     public static <StringArrays> void main(String[] args) {
@@ -9,6 +11,8 @@ public class ArraysExercises {
         int[] numbers = new int[] {20, 40, 50, 60};
 
         String[] StringArrays = new String[3];
+        System.out.println(numbers.length);
+        System.out.println("20,40,50,60");
         
         
     }
